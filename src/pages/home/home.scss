@@ -1,0 +1,17 @@
+.home {
+  background-color: var(--main-color);
+  overflow: hidden;
+
+  .footer {
+    height: 60px;
+    background-color: #91b972;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+
+    .icon {
+      padding-right: 5px;
+    }
+  }
+}

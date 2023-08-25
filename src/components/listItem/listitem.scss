@@ -1,0 +1,126 @@
+.listItem {
+  width: 270px;
+  height: 450px;
+  margin-right: 25px;
+  margin-left: 25px;
+  position: relative;
+
+  .imgLogo {
+    position: absolute;
+    height: 180px;
+    width: 125px;
+    left: 30%;
+    top: -75px;
+  }
+
+  .plantItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 450px;
+    border-radius: 15px;
+    -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    .slika {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 120px;
+
+      .plantItem {
+        background-color: #e3eddb;
+        padding: 3px;
+        border-radius: 15px;
+        img {
+          margin-top: 5px;
+          width: 57px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  .itemInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    border-radius: 0px 0px 15px 15px;
+
+    button {
+      padding: 8px 0px;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-radius: 50px;
+      transition: all 0.35s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.26);
+    }
+
+    .play {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #91b972;
+      color: #eaebeb;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 2px solid #91b972;
+      min-width: 225px;
+
+      span {
+        padding-left: 5px;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+    .play:hover {
+      background-color: #6e8d56;
+      color: #fff;
+      border: 2px solid #6e8d56;
+    }
+
+    .items {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      .name {
+        color: #91b972;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 3.15px;
+        text-transform: uppercase;
+      }
+
+      .limit {
+        color: white;
+        border: 1.5px solid red;
+        border-radius: 40px;
+        padding: 5px 3px;
+      }
+    }
+
+    .desc {
+      color: #000000;
+      cursor: auto;
+      font-size: 13px;
+      margin-bottom: 10px;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+    }
+  }
+}
