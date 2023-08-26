@@ -40,33 +40,34 @@ function Featured() {
   };
 
   const actionBar = (
-    <div>
-      <button onClick={handleAddPlant} className="play">
-        Add your plant
+      <button onClick={handleAddPlant} className="newPlay">
+        add your plant
       </button>
-    </div>
   );
 
   const modal = (
     <AddGame onClose={handleClose} actionBar={actionBar}>
       <div className="cards">
         <div className="addPlant">
-          <input type="text" onChange={handleChange} id="name" />
-          <span>naziv</span>
-          <input type="text" onChange={handleChange} id="game" />
-          <span>opis</span>
-
-          <input type="text" onChange={handleChange} id="imageSRC1" />
-          <span>glavna slika</span>
-
-          <input type="text" onChange={handleChange} id="imageSRC2" />
-          <span>slika1</span>
-
-          <input type="text" onChange={handleChange} id="imageSRC3" />
-          <span>slika2</span>
-
-          <input type="text" onChange={handleChange} id="imageSRC4" />
-          <span>slika3</span>
+          <div className="plantName">ADD YOUR PLANT</div>
+          <div className="columns">
+            <div className="column1">
+              <span className="plainText">Plant Name <span className="star">*</span></span>
+              <input type="text" onChange={handleChange} id="name" placeholder="Enter the name of your plant..."/>
+              <span className="plainText">Description <span className="star">*</span></span>
+              <textarea type="text" onChange={handleChange} id="game" placeholder="Write a short description..."/>
+            </div>
+            <div className="column2">
+              <span className="plainText">Main Image <span className="star">*</span></span>
+              <input type="text" onChange={handleChange} id="imageSRC1" placeholder="Enter the link of your images..."/>
+              <span className="plainText">Image 1 <span className="star">*</span></span>
+              <input type="text" onChange={handleChange} id="imageSRC2" placeholder="Enter the link of your images..."/>
+              <span className="plainText">Image 2 <span className="star">*</span></span>
+              <input type="text" onChange={handleChange} id="imageSRC3" placeholder="Enter the link of your images..."/>
+              <span className="plainText">Image 3 <span className="star">*</span></span>
+              <input type="text" onChange={handleChange} id="imageSRC4" placeholder="Enter the link of your images..."/>
+            </div>
+          </div>
         </div>
       </div>
     </AddGame>

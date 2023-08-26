@@ -1,5 +1,5 @@
-import "./list.scss";
 import ListItem from "../listItem/ListItem";
+import "./list.scss";
 
 function List({ data }) {
   console.log(data);
